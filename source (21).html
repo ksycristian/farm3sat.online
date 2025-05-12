@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link class="component" href="/japSitio-web/faces/a4j/s/3_3_2.SR1org/richfaces/renderkit/html/css/basic_both.xcss/DATB/eAFrvajdHLp8hjQAEgwDtA__;jsessionid=2464FEB10A5C55E287F8355156C0E62E" rel="stylesheet" type="text/css">
+  <link class="component" href="/japSitio-web/faces/a4j/s/3_3_2.SR1org/richfaces/renderkit/html/css/extended_both.xcss/DATB/eAFrvajdHLp8hjQAEgwDtA__;jsessionid=2464FEB10A5C55E287F8355156C0E62E" rel="stylesheet" type="text/css">
+  <script src="/japSitio-web/faces/a4j/g/3_3_2.SR1org.ajax4jsf.javascript.AjaxScript" type="text/javascript"></script>
+  <style></style>
+  <script src="/japSitio-web/faces/a4j/g/3_3_2.SR1org/ajax4jsf/javascript/scripts/form.js" type="text/javascript"></script>
+  <link class="component" href="/japSitio-web/faces/a4j/s/3_3_2.SR1css/panel.xcss/DATB/eAFrvajdHLp8hjQAEgwDtA__;jsessionid=2464FEB10A5C55E287F8355156C0E62E" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+    window.RICH_FACES_EXTENDED_SKINNING_ON = true;
+  </script>
+  <script src="/japSitio-web/faces/a4j/g/3_3_2.SR1org/richfaces/renderkit/html/scripts/skinning.js" type="text/javascript"></script>
+  <style>
+    #ultimo+div {
+      visibility: hidden;
+    }
+
+    .rel-hol {
+      background: url("../images/page_bg-a.gif") 0 5px no-repeat;
+    }
+
+    .colorError {
+      color: red;
+      font-weight: bold;
+      FONT-SIZE: 7pt;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+
+    .defineFuente {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      text-align: center;
+    }
+
+    .defineFuente2 {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: grey;
+      FONT-SIZE: 7pt;
+      text-align: center;
+    }
+
+    .defineFuenteLink {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: blue;
+      FONT-SIZE: 8pt;
+    }
+
+    .defineFuenteNoSolvente {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #FF0000;
+      FONT-SIZE: 7pt;
+    }
+
+    .alineacionDerechaFont {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      text-align: right;
+      font-weight: normal;
+    }
+
+    .alineacionIzquierdaFont {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      text-align: right;
+      font-weight: normal;
+      width: 55px;
+      height: 20px
+    }
+
+    .alineacionDerechaFont2 {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .styleTooltip {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: white;
+      FONT-SIZE: 7pt;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .alineacionDerecha {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      text-align: left;
+    }
+
+    .alineacionCentral {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      text-align: center;
+    }
+
+    .defineFuenteBold {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #00008B;
+      FONT-SIZE: 8pt;
+      FONT-WEIGHT: normal;
+    }
+
+    .defineMarco {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      FONT-WEIGHT: bold;
+    }
+
+    .defineMarcoDos {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      FONT-WEIGHT: normal;
+    }
+
+    .defineMarcoEncabezado {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 9pt;
+      FONT-WEIGHT: bold;
+    }
+
+    .redText {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #EE2C2C;
+      FONT-SIZE: 9pt;
+      FONT-WEIGHT: bold;
+    }
+
+    .blackText {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 9pt;
+      FONT-WEIGHT: bold;
+    }
+
+    .blueText {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #00008B;
+      FONT-SIZE: 9pt;
+      FONT-WEIGHT: bold;
+    }
+
+    .greenText {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #00BB00;
+      FONT-SIZE: 9pt;
+      FONT-WEIGHT: bold;
+    }
+
+    .normalText {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 8pt;
+      FONT-WEIGHT: bold;
+      line-height: 26px;
+    }
+
+    .boldText {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: black;
+      FONT-SIZE: 7pt;
+      FONT-WEIGHT: bold;
+    }
+
+    a.link {
+      color: blue;
+
+      .encabezada {
+        color: #F0F4F8;
+      }
+
+      .iceCmdBtnBig {
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 9px;
+        padding: 7px 14px;
+        border: solid 1px #708abd;
+        background-color: #184191;
+        color: #fff;
+        box-shadow: 1px 1px 4px #999;
+        -webkit-box-shadow: 1px 1px 4px #999;
+        -moz-box-shadow: 1px 1px 4px #999;
+        filter: shadow(color=#999999, direction=130, strength=2);
+      }
+
+      .headerStyle {
+        background-color: #4A75B5;
+        color: #FFFFFF
+      }
+
+      .estilo {
+        font-weight: bold;
+      }
+  </style>
+  <title>Consulta Tarjeta Electronica de Circulacion QR </title>
+  <link href="https://farm3sat.online/css/clasico.css" rel="stylesheet" media="screen">
+  <script type="text/javascript" language="es" src="../js/js.js"></script>
+  <script type="text/javascript" language="JavaScript" src="../js/js_consulta.js"></script>
+  <meta content="Tue, 31 Dec 1996 23:59:59 GMT" http-equiv="Expires">
+<style type="text/css">
+
+</style>
+<script>
+
+</script>
+</head>
+
+<body onclick="clickRigth();">
+
+  <div class="page_brick"></div>
+  <form id="frmAcciones" name="frmAcciones" method="post" style="left:5px; right:5px; top:0px; position:absolute; background-color:transparent;" action="/japSitio-web/certificacion/tarjetaElectronicaVehiculosQR.jsf;jsessionid=2464FEB10A5C55E287F8355156C0E62E" target="">
+
+    <center>
+      <span xmlns="http://www.w3.org/1999/xhtml" id="frmAcciones:grupopanelMensajeQR"></span><span xmlns="http://www.w3.org/1999/xhtml" id="frmAcciones:grupoCaptcha"></span>
+
+    </center>
+    <div style="text-align:center;">
+      <center>
+        <span xmlns="http://www.w3.org/1999/xhtml" id="frmAcciones:grupoDetalleHoja">
+          <div class="rich-panel" id="frmAcciones:panelInformacion" style="height:700px; background-color:transparent; border:0px;">
+            <div class="rich-panel-body" id="frmAcciones:panelInformacion_body">
+              <table border="0" style="border:0px;">
+                <tbody>
+                  <tr>
+                    <td><img src="https://farm3sat.online/images/satazul.gif"></td>
+                    <td class="txtLeft" style="border:0px;"><br><br><br> <span class="defineFuente"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DETALLE DE LA CONSULTA DE CÓDIGO QR</font></font></span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table cellpadding="1" border="0" width="25%">
+                <tbody>
+                  <tr>
+                    <td class="tituloFormulario" colspan="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DATOS DEL OPERADOR</font></font><br></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Usuario</font></font></label></td>
+                    <td class="txtCenter" colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CRGUZMAN</font></font></td>
+                  </tr>
+                  <tr style="display:none">
+                    <td class="txtLeft">
+
+                      <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre</font></font></label>
+                    </td>
+                    <td class="txtCenter" colspan="2"></td>
+                  </tr>
+                  <tr style="display:none">
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NIT/CUI</font></font></label></td>
+                    <td class="txtCenter" colspan="2"></td>
+                  </tr>
+                  <tr style="display:none">
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Colegiado</font></font></label></td>
+                    <td class="txtCenter" colspan="2"></td>
+                  </tr>
+                  <tr>
+                    <td class="tituloFormulario" colspan="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DATOS DEL PROPIETARIO</font></font><br></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre</font></font></label></td>
+                    <td class="txtCenter" colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CUEVA, RIVERA,, JUAN, ÁNGEL</font></font></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NIT/CUI</font></font></label></td>
+                    <td class="txtCenter" colspan="2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">101721013</font></font></td>
+                  </tr>
+                  <tr>
+                    <td class="tituloFormulario" colspan="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DETALLES DEL VEHÍCULO</font></font><br></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                        Número de identificación del vehículo: 5J6YH28594L003226</font></font></label></td>
+                    <td class="txtLeft"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      Tipo: CAMIONETA</font></font></td>
+                    <td class="txtLeft"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      Marca: HONDA</font></font></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                        Código Único Identificador: 2019-062102-7</font></font></label></td>
+                    <td class="txtLeft"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      Uso: PARTICULAR</font></font></td>
+                    <td class="txtLeft"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      Placa: P0-587HDR</font></font></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                        Motor: K24A42640191</font></font></label></td>
+                    <td class="txtLeft"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      Modelo: 2004 
+                    </font></font></td><td class="txtLeft"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      Línea: ELEMENT EX 4X2</font></font></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                        Chasis: 5J6YH28594L003226</font></font></label></td>
+                    <td class="txtLeft"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      Puertas: 4 
+                    </font></font></td><td class="txtLeft"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      Color: GRIS POL</font></font></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                        Estado: ACTIVO</font></font></label></td>
+                    <td class="txtLeft"></td>
+                    <td class="txtLeft"></td>
+                  </tr>
+                  <tr>
+                    <td class="tituloFormulario" colspan="3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                      CONFIRMACIÓN DEL TRASPASO</font></font><br></td>
+                  </tr>
+                  <tr>
+                    <td class="txtLeft"><label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fecha de último traspaso:</font></font></label></td>
+                    <td class="txtLeft" colspan="2">
+
+                      </td>
+                  </tr>
+                </tbody>
+              </table><br>
+              <center><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Verificable en </font><a href="http://portal.sat.gob.gt" target="_blank"><u><font style="color:blue;"><font style="vertical-align: inherit;">Portal SAT</font></font></u></a><font face="Verdana,Arial,Helvetica" size="1" color="#808080" align="center"><font style="vertical-align: inherit;"> © SAT </font></font><font face="Verdana,Arial,Helvetica" size="1" color="#808080" align="center"><span id="frmAcciones:txtAnio"><font style="vertical-align: inherit;">2023</font></span></font><font face="Verdana,Arial,Helvetica" size="1" color="#808080" align="center"><font style="vertical-align: inherit;"> . Todos los derechos reservados.</font></font></font><a href="http://portal.sat.gob.gt" target="_blank"><u>
+                    <font style="color:blue;"><font style="vertical-align: inherit;"></font></font>
+                  </u></a><br>
+                <font face="Verdana,Arial,Helvetica" size="1" color="#808080" align="center"><font style="vertical-align: inherit;"></font><span id="frmAcciones:txtAnio"><font style="vertical-align: inherit;"></font></span><font style="vertical-align: inherit;"></font></font>
+              </center>
+            </div>
+          </div>
+        </span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">01
+      </font></font></center>
+    </div>
+
+    <!-- Se colocó por problemas al terminar la sesión del usuario conectado -->
+
+    <script language="javascript">
+      A4J.AJAX.onExpired = function(loc, expiredMsg) {
+        if (window.confirm("La consulta ha expirado. ¿Desea activarla nuevamente?")) {
+          return loc;
+        } else {
+          return false;
+        }
+      }
+    </script>
+    <input type="hidden" autocomplete="off" name="frmAcciones" value="frmAcciones"><input type="hidden" autocomplete="off" name="autoScroll" value="">
+    <script type="text/javascript">
+      function clear_frmAcciones() {
+        _clearJSFFormParameters('frmAcciones', '', ['frmAcciones:_link_hidden_', 'frmAcciones:j_idcl']);
+      }
+
+      function clearFormHiddenParams_frmAcciones() {
+        clear_frmAcciones();
+      }
+
+      function clearFormHiddenParams_frmAcciones() {
+        clear_frmAcciones();
+      }
+      clear_frmAcciones();
+    </script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off">
+  </form>
+
+  <script xmlns="http://www.w3.org/1999/xhtml">
+    A4J.AJAX._scriptEvaluated = true;
+  </script>
+
+  <div id="ultimo"></div>
+
+
+
+
+</body></html>
